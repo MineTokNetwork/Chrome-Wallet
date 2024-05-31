@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <meta name="description" content="Web 4 Technology Gateway. For Project, AI, And any other">
+    <meta name="keywords" content="Web 4, Technology, Gateway, Blockchain">
+    <meta name="author" content="Sora Yuhafiga">
+
+    <!--CSS-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/entypo.css">
+
+    <!--JS-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="icon" href="img/overlay.png" type="image/ico" />
+    <title>Web 4 - Gateway</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        /* Ganti ukuran huruf dan logo */
+        .container h3 {
+            font-size: 36px;
+            margin-top: 150px;
+            color: gold; /* Warna teks emas */
+            font-weight: bold; /* Tulisan tebal */
+        }
+
+        .container img.logo {
+            width: 200px;
+            height: 200px;
+            margin-top: 20px;
+        }
+
+        .btn {
+            font-size: 20px;
+            padding: 10px 13px;
+            margin: 10px;
+        }
+
+        footer h5 {
+            font-size: 16px;
+            margin: 10px;
+            color: gold; /* Warna teks emas */
+        }
+    </style>
+</head>
+<body>
+    <video id="background-video" autoplay muted loop>
+        <source src="globe.gif.mp4" type="video/mp4">
+    </video>
+
+    <div class="text-center container">
+        <h3 style="color: gold;">Welcome To Web 4 RCI Wallet</h3>
+        <p style="padding-top: 20px;">
+            <a href="https://raffah.000webhostapp.com/">
+                <img src="img/overlay.png" alt="Logo" style="width: 128px; height: 128px;">
+            </a>
+        </p>
+        <a href="main.html" class="btn btn-primary"><span id="create-wallet-button">Create Wallet</span></a>
+        <a href="import.html" class="btn btn-primary"><span id="import-wallet-button">Import Wallet</span></a> 
+    </div>
+    <footer class="mb-3" style="bottom: 0px;">
+        <div class="container text-center">
+            <h5 style="color: gold;">2024 <span class="entypo heart text-danger" style="font-size: 20px;"></span> by <a target="_blank" href="#">PT. Raffah Cahaya Inti</a></h5>
+        </div>
+    </footer>
+</body>
+<script src="js/index.js"></script>
+</html>
+

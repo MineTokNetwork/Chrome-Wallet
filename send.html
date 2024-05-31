@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <meta name="description" content="Web 4 Technology Gateway. For Project, AI, And any other">
+    <meta name="keywords" content="Web 4, Technology, Gateway, Blockchain">
+    <meta name="author" content="Sora Yuhafiga">
+
+    <!--CSS-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/entypo.css">
+
+    <!--JS-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="icon" href="img/overlay.png" type="image/ico" />
+    <title>Web 4 - Gateway</title>
+</head>
+<body>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link" href="main.html"><span id="create-wallet">Create Wallet</span></a>
+        </li>
+
+        <li class="nav-item">
+            <a class="na-link" href="import.html"><span id="import-wallet">Import Wallet</span></a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="balance.html"><span id="your-wallet">Your Wallet</span></a>
+        </li>
+
+        <li class="nav-item active">
+            <a class="nav-link" href="send.html"><span id="send">Send</span></a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" id="history" href="http://20.243.210.93:4321/transactions" target="_blank"><span id="tx-history">History</span></a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="chaininfo.html"><span id="chain-info">Chain info</span></a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="#"><span id="chain-info">Your NFT</span></a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="settings.html"><span id="settings">Settings</span></a>
+        </li>
+    </ul>
+    <label for="sendInput" id="send-to">Send To: </label>
+    <input type="text" class="form-control docs-input" id="sendInput" placeholder="Raffah Coin Address">
+
+    <label for="amountGOLD" id="amount-gold">Amount: </label>
+    <div class="sendAmount" style="padding-bottom: 5px;">
+        <input type="text" class="form-control docs-input" id="amountGOLD" placeholder="min 1 - max ~">
+        <p></p>
+        <input type="text" class="form-control docs-input" id="feeGold" placeholder="Fee: (Default 0.001 Raffah Coin)">
+    </div>
+    <p style="text-align: center;"><span id="showErrororSuccess"></span></p>
+    <div class="container text-center">
+        <button class="btn btn-primary" id="sendTx" style="width: 100%;">Send Transaction</button>
+    </div>
+
+</body>
+<footer class="mb-3" style="bottom: 0px;">
+    <div class="container text-center">
+        <h5><span id="part1">Remember to</span> <a href="settings.html" id="logoutlink">Logout</a> <span id="part2">before exiting Chrome</span></h5>
+        <h6>2024 <span class="entypo heart text-danger" style="font-size: 20px;"></span> by <a target="_blank" href="#">PT. Raffah Cahaya Inti</a></h6>
+    </div>
+</footer>
+<script src="js/send.js"></script>
+</html>
